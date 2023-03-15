@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="627a4e13-c297-4c71-a8d4-d84509ba5eb1">
+  <name>ОбменМП_ДоступКНастройкамОбменаМП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Доступ к настройкам обмена с мобильным приложением</value>
+  </synonym>
+</mdclass:Role>

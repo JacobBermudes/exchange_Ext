@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="27cf86ef-5ec9-4fac-8e69-985516da9d77">
+  <producedTypes>
+    <refType typeId="7f0c8c29-e9f9-4241-9bee-699405034104" valueTypeId="f280f03b-4bfb-41e6-9eec-e0e81ebb787e"/>
+    <listType typeId="94d9b5f9-1d89-4cb2-85a4-16ddc059a1d4" valueTypeId="eac0c64d-2dc0-49e7-b34c-7c0792541f8a"/>
+    <managerType typeId="f014246b-7292-4985-9a4c-b04b78f30e19" valueTypeId="e29452dc-0a63-402a-b3b3-114ce00ce07c"/>
+  </producedTypes>
+  <name>ОбменМП_ВидыНастроекРасширения</name>
+  <synonym>
+    <key>ru</key>
+    <value>(МП) Виды настроек расширения</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="5b0c63e7-66d3-4b67-a1c7-7e2cd30e3282">
+    <name>ЗданиеМетаданные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование метаданных справочника зданий</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0cfbb8af-57e0-4548-9888-46edd446a774">
+    <name>ВыгрузкаКвитанций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгрузка квитанций</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9f701f0e-4b45-41ae-8fbf-7bdf18e2da48">
+    <name>ВыгрузкаНачислений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгрузка начислений</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

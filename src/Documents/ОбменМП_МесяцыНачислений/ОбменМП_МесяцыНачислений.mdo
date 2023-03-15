@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="625cefe1-b9d2-49f2-8e1f-7da8c98cf7f7">
+  <producedTypes>
+    <objectType typeId="4bb6c946-f936-441c-b2c8-1ce667624b48" valueTypeId="06960a02-e314-43c4-951a-02dc1dedbc0c"/>
+    <refType typeId="d9545d45-6dbc-4407-bb6a-2cfe49c4e71e" valueTypeId="6aa9abd6-bbb1-478d-adbc-77be88730fb3"/>
+    <selectionType typeId="843b940e-ab13-4a0a-99a3-8b0d723e4ec4" valueTypeId="bcd37608-fe87-42e5-82e7-ebe14fa3604b"/>
+    <listType typeId="7561e098-bcdf-495c-8da7-88b3f78cb7b2" valueTypeId="8002c860-22d2-46a1-b12d-ca259bac0a85"/>
+    <managerType typeId="88ab1202-f60c-440b-8119-985ea3424c8e" valueTypeId="ffe830ba-352d-433e-a9a1-a800fa7cfb70"/>
+  </producedTypes>
+  <name>ОбменМП_МесяцыНачислений</name>
+  <synonym>
+    <key>ru</key>
+    <value>(МП) Месяцы начислений</value>
+  </synonym>
+  <comment>Указывает месяцы разрешенные для выгрузки в мобильное приложение</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ОбменМП_МесяцыНачислений.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>(МП) Месяцы начислений</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Месяцы начислений</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ОбменМП_МесяцыНачислений.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="c725d3cd-d876-4fbc-ba1f-d51f8751fdc7">
+    <name>МесяцНачислений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Месяц начислений</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="7a2f48e8-4615-4a58-90f5-a994c48367f1">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="92dd5303-8c3e-4fb4-ab7d-56b77f7deedb">
+    <producedTypes>
+      <objectType typeId="4c713434-a459-4d56-940d-56c202e5f617" valueTypeId="2a503c50-acdb-4268-b8f1-3fdf22571c80"/>
+      <rowType typeId="3292c8f5-0fce-4d28-8807-c155746ca39d" valueTypeId="16011ba1-2284-4038-be31-42acd075d797"/>
+    </producedTypes>
+    <name>УникальныеИдентификаторы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уникальные идентификаторы</value>
+    </synonym>
+    <attributes uuid="947f5901-fdc2-41cb-938a-2d2aa4254811">
+      <name>УникальныйИдентификатор</name>
+      <synonym>
+        <key>ru</key>
+        <value>Уникальный идентификатор</value>
+      </synonym>
+      <type>
+        <types>UUID</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

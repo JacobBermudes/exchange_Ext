@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c9360075-523d-46ab-ae4e-ccfbd6a94166">
+  <producedTypes>
+    <selectionType typeId="bb1f631b-c6da-435d-98e5-620727053fbe" valueTypeId="50b5e4df-12fb-4ed6-b8a9-b088990e6561"/>
+    <listType typeId="48499c7b-0b79-4a0e-b902-1033a9aa0121" valueTypeId="46282901-4dfa-4f3b-bc9f-a7353ece0087"/>
+    <managerType typeId="3633056c-e9b8-4bef-93a1-7234f466632a" valueTypeId="31d571d1-619a-4da1-8e29-d05421578a7e"/>
+    <recordSetType typeId="9bf9136e-d8f0-4534-98f8-e8357a966da3" valueTypeId="315fbd0f-25f9-46bf-95b4-ff953b6eb458"/>
+    <recordKeyType typeId="98678436-6562-4f74-8524-a981057e48dd" valueTypeId="b45fe0d3-6a1a-4730-a887-032cc08ab67a"/>
+    <recordType typeId="1bdec9a9-474f-4b82-b1f9-49588c6e2f4d" valueTypeId="309d2a43-ae7f-4662-b39b-b9c7447ae973"/>
+    <recordManagerType typeId="deb2798d-fc9d-49da-bdc0-7936348a9417" valueTypeId="5c3dc82a-a787-4d32-8d92-e5840c479085"/>
+  </producedTypes>
+  <name>ОбменМП_НастройкиРасширения</name>
+  <synonym>
+    <key>ru</key>
+    <value>(МП) Настройки расширения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ОбменМП_НастройкиРасширения.Form.ФормаЗаписи</defaultRecordForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>(МП) Настройки расширения</value>
+  </recordPresentation>
+  <resources uuid="df755c1c-6496-4c9d-92d9-43e011200856">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>Characteristic.ОбменМП_НастройкиОбмена</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.ОбменМП_НастройкиРасширения.Dimension.ВидНастройки</field>
+    </choiceParameterLinks>
+    <linkByType>
+      <field>InformationRegister.ОбменМП_НастройкиРасширения.Dimension.ВидНастройки</field>
+    </linkByType>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="7d7e7993-c6a7-4f6c-bd30-ceb1686b2dd3">
+    <name>ВидНастройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид настройки</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.ОбменМП_НастройкиОбмена</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="782e50d5-e586-425c-a4df-fbda07ca6d82">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

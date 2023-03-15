@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ae03cc69-e696-49d5-9a94-b6773a96cba9">
+  <producedTypes>
+    <objectType typeId="a554a1a6-6f42-47a3-9ce3-b3ecc630e387" valueTypeId="8b10ee19-de4b-4db0-82bc-2db7244da755"/>
+    <refType typeId="2b87367b-3ba6-47aa-bc9d-bc153d594d3c" valueTypeId="07fe6d6b-ef4f-4739-999c-cb279063c978"/>
+    <selectionType typeId="a5afaefc-8e33-4c52-9df2-53a02d3d186a" valueTypeId="37870c18-4cbd-4fb3-8fb3-3a023060e7c5"/>
+    <listType typeId="939ddfc0-377b-4ee9-b975-0cbc5f2fc8f0" valueTypeId="24932158-8cae-4d45-adb9-9214a9b9e110"/>
+    <managerType typeId="4712f3f2-813f-49d2-99b5-3da1b93e9522" valueTypeId="798c1bae-a16b-4829-bf75-77c99642fcdc"/>
+    <containerType typeId="4c576496-8c8b-4321-ac5f-29947aa3c453" valueTypeId="f2eaab83-5371-4c44-a446-4e40d49052a6"/>
+  </producedTypes>
+  <name>ОбменМП_НастройкиОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>(МП) Настройки обмена</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCharacteristicTypes.ОбменМП_НастройкиОбмена.StandardAttribute.Code</inputByString>
+  <inputByString>ChartOfCharacteristicTypes.ОбменМП_НастройкиОбмена.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>(МП) Настройки обмена</value>
+  </objectPresentation>
+  <characteristicExtValues>Catalog.ОбменМП_ВидыНастроекОбмена</characteristicExtValues>
+  <type>
+    <types>String</types>
+    <types>Number</types>
+    <types>Date</types>
+    <types>Boolean</types>
+    <types>CatalogRef.ОбменМП_ВидыНастроекОбмена</types>
+    <numberQualifiers>
+      <precision>15</precision>
+      <scale>3</scale>
+    </numberQualifiers>
+    <stringQualifiers>
+      <length>100</length>
+    </stringQualifiers>
+    <dateQualifiers>
+      <dateFractions>Date</dateFractions>
+    </dateQualifiers>
+  </type>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>25</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="4bbf61b4-77e0-4968-9013-7b5038152b60">
+      <name>НаименованиеМетаданных</name>
+      <description>Наименование справочника</description>
+      <code>000000001</code>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+    </items>
+    <items id="78989c4d-02ff-4a42-b04a-ded2cdd5e17f">
+      <name>Включен</name>
+      <description>Включен</description>
+      <code>000000002</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="565b97af-1495-4454-8641-59a3177b45a1">
+      <name>НаименованиеОбщегоМодуля</name>
+      <description>Имя общего модуля</description>
+      <code>000000004</code>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:ChartOfCharacteristicTypes>

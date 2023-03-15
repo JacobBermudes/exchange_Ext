@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0d0c69a6-24bc-4a66-8738-9da36d94a4d5">
+  <producedTypes>
+    <selectionType typeId="8fc8594a-9c73-412d-bf6e-c131f8ce72b2" valueTypeId="130b0859-9d94-4693-9b56-b65cc692be5b"/>
+    <listType typeId="b83afc30-02b6-43ef-9e75-cb8d88b45ea9" valueTypeId="d70b8a7a-3d6d-428f-bdf8-493a97250d81"/>
+    <managerType typeId="02b94f37-fc66-4102-86d2-0a918dea0549" valueTypeId="625a3e4c-f918-441e-abe4-b3f5b681f6e5"/>
+    <recordSetType typeId="084d07ac-b898-41fd-bc78-0b84b79b652a" valueTypeId="41fc70cd-bd2c-477b-82b9-f936c5ad66be"/>
+    <recordKeyType typeId="aae51e4b-8480-4baa-89b2-9f62b515fcc8" valueTypeId="69a0f74e-1632-41e3-aeb2-fb2654b25c21"/>
+    <recordType typeId="3f97eebf-67d1-4457-af62-7bc16569b7c3" valueTypeId="19c8c302-a58c-4a4d-8634-d87b6a7e7674"/>
+    <recordManagerType typeId="2fb0683d-4365-44df-bf61-1e9c6134db4a" valueTypeId="fe61c7e3-27fb-4b43-8727-325eba47f452"/>
+  </producedTypes>
+  <name>ОбменМП_ИдентификаторыПлатежей</name>
+  <synonym>
+    <key>ru</key>
+    <value>(МП) Идентификаторы платежей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>(МП) Идентификаторы платежей</value>
+  </recordPresentation>
+  <resources uuid="f5fe4a52-35f8-4870-b5f2-e0a9134b0a65">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="3a1795f4-23b9-457d-bbfc-75531c947032">
+    <name>ДатаПлатежа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата платежа</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="136594fd-9fbf-4479-8cc6-5abce605dd7a">
+    <name>Идентификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a6cfc918-ab2b-4fc3-872c-4c421f5047e5">
+    <name>НомерСчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер счета</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

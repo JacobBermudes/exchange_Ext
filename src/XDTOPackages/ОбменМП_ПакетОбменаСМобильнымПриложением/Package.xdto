@@ -1,0 +1,163 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.skylab.ru/">
+	<import namespace="http://www.w3.org/2001/XMLSchema"/>
+	<objectType name="Partner">
+		<property name="ID" type="xs:string" form="Attribute"/>
+		<property name="Name" type="xs:string" form="Attribute"/>
+		<property name="Gender" type="xs:string" nillable="true" form="Attribute"/>
+		<property name="Birthday" type="xs:date" nillable="true" form="Attribute"/>
+		<property name="Phone" type="xs:string" nillable="true" form="Attribute"/>
+	</objectType>
+	<objectType name="Account">
+		<property name="ID" type="xs:string" form="Attribute"/>
+		<property name="Number" type="xs:string" form="Attribute"/>
+		<property name="ExternalNumber" type="xs:string" nillable="true" form="Attribute"/>
+		<property name="Description" type="xs:string" nillable="true" form="Attribute"/>
+		<property name="ApartmentID" type="xs:string" nillable="true" form="Attribute"/>
+		<property name="Active" type="xs:boolean" form="Attribute"/>
+	</objectType>
+	<objectType name="PartnerAccount">
+		<property name="PartnerID" type="xs:string" form="Attribute"/>
+		<property name="AccountID" type="xs:string" form="Attribute"/>
+		<property name="ShareOwnership" type="xs:decimal" nillable="true" form="Attribute"/>
+	</objectType>
+	<objectType name="Calc">
+		<property name="Period" type="xs:date" form="Attribute"/>
+		<property name="AccountID" type="xs:string" form="Attribute"/>
+		<property name="CalcKindID" type="xs:string" form="Attribute"/>
+		<property name="Debit" type="xs:decimal" form="Attribute"/>
+		<property name="Credit" type="xs:decimal" form="Attribute"/>
+		<property name="BalanceBegin" type="xs:decimal" form="Attribute"/>
+		<property name="BalanceEnd" type="xs:decimal" form="Attribute"/>
+		<property name="Quantity" type="xs:decimal" form="Attribute"/>
+		<property name="PDFName" type="xs:string" form="Attribute"/>
+	</objectType>
+	<objectType name="Calcs">
+		<property xmlns:d3p1="http://www.skylab.ru/" name="Calc" type="d3p1:Calc" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="CalcKind">
+		<property name="ID" type="xs:string" form="Attribute"/>
+		<property name="Name" type="xs:string" form="Attribute"/>
+		<property name="Unit" type="xs:string" form="Attribute"/>
+	</objectType>
+	<objectType name="CalcKinds">
+		<property xmlns:d3p1="http://www.skylab.ru/" name="CalcKind" type="d3p1:CalcKind" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Partners">
+		<property xmlns:d3p1="http://www.skylab.ru/" name="Partner" type="d3p1:Partner" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Accounts">
+		<property xmlns:d3p1="http://www.skylab.ru/" name="Account" type="d3p1:Account" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="PartnerAccounts">
+		<property xmlns:d3p1="http://www.skylab.ru/" name="PartnerAccount" type="d3p1:PartnerAccount" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Building">
+		<property name="ID" type="xs:string" form="Attribute"/>
+		<property name="Name" type="xs:string" form="Attribute"/>
+		<property name="PaidService" type="xs:boolean" default="False" form="Attribute"/>
+	</objectType>
+	<objectType name="Apartment">
+		<property name="ID" type="xs:string" form="Attribute"/>
+		<property name="Name" type="xs:string" form="Attribute"/>
+		<property name="Number" type="xs:int" form="Attribute"/>
+		<property name="BuildingID" type="xs:string" form="Attribute"/>
+		<property name="Porch" type="xs:string" form="Attribute"/>
+		<property name="Area" type="xs:decimal" nillable="true" form="Attribute"/>
+		<property name="Floor" type="xs:string" form="Attribute"/>
+		<property name="Uninhabited" type="xs:boolean" form="Attribute"/>
+		<property name="TypeID" type="xs:string" form="Attribute"/>
+		<property name="Rooms" type="xs:string" form="Attribute"/>
+		<property name="Owners" type="xs:string" form="Attribute"/>
+		<property name="Living" type="xs:string" form="Attribute"/>
+	</objectType>
+	<objectType name="Buildings">
+		<property xmlns:d3p1="http://www.skylab.ru/" name="Building" type="d3p1:Building" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Apartments">
+		<property xmlns:d3p1="http://www.skylab.ru/" name="Apartment" type="d3p1:Apartment" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Orders">
+		<property xmlns:d3p1="http://www.skylab.ru/" name="Order" type="d3p1:Order" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="OrderKinds">
+		<property xmlns:d3p1="http://www.skylab.ru/" name="OrderKind" type="d3p1:OrderKind" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="OrderKind">
+		<property name="ID" type="xs:string" form="Attribute"/>
+		<property name="Name" type="xs:string" form="Attribute"/>
+	</objectType>
+	<objectType name="Order">
+		<property name="ID" type="xs:string" lowerBound="0" form="Attribute"/>
+		<property name="Date" type="xs:dateTime" lowerBound="0" form="Attribute"/>
+		<property name="Number" type="xs:integer" form="Attribute"/>
+		<property name="Status" type="xs:string" lowerBound="0" form="Attribute"/>
+		<property name="Description" type="xs:string" lowerBound="0" form="Attribute"/>
+		<property name="AccountID" type="xs:string" lowerBound="0" form="Attribute"/>
+		<property name="CategoryID" type="xs:string" lowerBound="0" form="Attribute"/>
+		<property name="Customer" type="xs:string" lowerBound="0" form="Attribute"/>
+		<property name="Phone" type="xs:string" lowerBound="0" form="Attribute"/>
+	</objectType>
+	<objectType name="Root">
+		<property xmlns:d3p1="http://www.skylab.ru/" name="Header" type="d3p1:Header"/>
+		<property xmlns:d3p1="http://www.skylab.ru/" name="Body" type="d3p1:Body" nillable="true"/>
+	</objectType>
+	<objectType name="Header">
+		<property name="PackageNumber" type="xs:integer"/>
+		<property name="PackageNumberAccepted" type="xs:integer"/>
+		<property name="ID" type="xs:string" lowerBound="0" form="Attribute"/>
+	</objectType>
+	<objectType name="Body">
+		<property xmlns:d3p1="http://www.skylab.ru/" name="Orders" type="d3p1:Orders" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.skylab.ru/" name="OrderKinds" type="d3p1:OrderKinds" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.skylab.ru/" name="CalcKinds" type="d3p1:CalcKinds" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.skylab.ru/" name="Partners" type="d3p1:Partners" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.skylab.ru/" name="Accounts" type="d3p1:Accounts" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.skylab.ru/" name="Calcs" type="d3p1:Calcs" lowerBound="0"/>
+		<property name="PartnerAccounts" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.skylab.ru/" name="Buildings" type="d3p1:Buildings" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.skylab.ru/" name="Apartments" type="d3p1:Apartments" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.skylab.ru/" name="Receipts" type="d3p1:Receipts" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.skylab.ru/" name="ApartmentTypes" type="d3p1:ApartmentTypes" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.skylab.ru/" name="AccrualTypes" type="d3p1:AccrualTypes" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.skylab.ru/" name="CounterTariffValues" type="d3p1:CounterTariffValues" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.skylab.ru/" name="PayIDS" type="d3p1:PayIDS" lowerBound="0"/>
+	</objectType>
+	<objectType name="Receipt">
+		<property name="Period" type="xs:date" form="Attribute"/>
+		<property name="PDF" type="xs:base64Binary" form="Attribute"/>
+		<property name="AccountID" type="xs:string" form="Attribute"/>
+	</objectType>
+	<objectType name="Receipts">
+		<property xmlns:d3p1="http://www.skylab.ru/" name="Receipt" type="d3p1:Receipt" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ApartmentType">
+		<property name="ID" type="xs:string" form="Attribute"/>
+		<property name="Name" type="xs:string" form="Attribute"/>
+	</objectType>
+	<objectType name="ApartmentTypes">
+		<property xmlns:d3p1="http://www.skylab.ru/" name="ApartmentType" type="d3p1:ApartmentType" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="PayID">
+		<property name="ID" type="xs:string" lowerBound="0" upperBound="-1" form="Attribute"/>
+	</objectType>
+	<objectType name="PayIDS">
+		<property xmlns:d3p1="http://www.skylab.ru/" name="PayID" type="d3p1:PayID" lowerBound="0" upperBound="-1" form="Element"/>
+	</objectType>
+	<objectType name="AccrualType">
+		<property name="ID" type="xs:string" form="Attribute"/>
+		<property name="Name" type="xs:string" form="Attribute"/>
+	</objectType>
+	<objectType name="AccrualTypes">
+		<property xmlns:d3p1="http://www.skylab.ru/" name="AccrualType" type="d3p1:AccrualType" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="CounterTariffValues">
+		<property xmlns:d3p1="http://www.skylab.ru/" name="CounterTariffValue" type="d3p1:CounterTariffValue" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="CounterTariffValue">
+		<property name="ApartmentID" type="xs:string" form="Attribute"/>
+		<property name="CalcKindID" type="xs:string" form="Attribute"/>
+		<property name="CounterID" type="xs:string" form="Attribute"/>
+		<property name="CounterName" type="xs:string" form="Attribute"/>
+		<property name="Value" type="xs:decimal" form="Attribute"/>
+	</objectType>
+</package>

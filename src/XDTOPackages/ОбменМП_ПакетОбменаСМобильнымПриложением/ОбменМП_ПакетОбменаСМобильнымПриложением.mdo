@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="109b5861-28dd-47ad-a094-8c6b8fa55602">
+  <name>ОбменМП_ПакетОбменаСМобильнымПриложением</name>
+  <synonym>
+    <key>ru</key>
+    <value>(МП) Пакет обмена с мобильным приложением</value>
+  </synonym>
+  <namespace>http://www.skylab.ru/</namespace>
+</mdclass:XDTOPackage>

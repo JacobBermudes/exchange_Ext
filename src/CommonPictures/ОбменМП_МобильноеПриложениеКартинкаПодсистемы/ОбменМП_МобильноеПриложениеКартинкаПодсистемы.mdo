@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f7ceee7-5522-4a63-9e03-d73390a69532">
+  <name>ОбменМП_МобильноеПриложениеКартинкаПодсистемы</name>
+  <synonym>
+    <key>ru</key>
+    <value>(МП) Мобильное приложение</value>
+  </synonym>
+</mdclass:CommonPicture>

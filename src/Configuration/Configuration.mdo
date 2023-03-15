@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="3cabac6e-fe47-4002-82c0-62d16d9df9b7">
+  <name>ОбменСМобильнымПриложением</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:ConfigurationExtension">
+    <defaultRunMode>Checked</defaultRunMode>
+    <usePurposes>Checked</usePurposes>
+    <managedApplicationModule>Extended</managedApplicationModule>
+    <commandInterface>Extended</commandInterface>
+    <mainSectionCommandInterface>Extended</mainSectionCommandInterface>
+    <defaultLanguage>Checked</defaultLanguage>
+    <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
+    <compatibilityMode>Checked</compatibilityMode>
+    <defaultStyle>Extended</defaultStyle>
+  </extension>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="20e538af-c9cd-46bf-b33f-110232a8608d"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="dc4814b9-9f45-4956-9698-21670185f5ad"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="5896f4d7-f79f-4d92-8930-2c934e4baa6e"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="57612d14-ff84-4741-8064-4535d275b852"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="90e820c9-4c75-46c7-81e8-6aac10a47885"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="27af474c-4ed7-4d14-9504-252366519afa"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="bd55ef21-82f7-4417-bb09-879e1ab29aab"/>
+  <keepMappingToExtendedConfigurationObjectsByIDs>true</keepMappingToExtendedConfigurationObjectsByIDs>
+  <namePrefix>ОбменМП_</namePrefix>
+  <configurationExtensionCompatibilityMode>8.3.14</configurationExtensionCompatibilityMode>
+  <configurationExtensionPurpose>AddOn</configurationExtensionPurpose>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <interfaceCompatibilityMode>TaxiEnableVersion8_2</interfaceCompatibilityMode>
+  <compatibilityMode>8.3.14</compatibilityMode>
+  <languages uuid="2f730741-dbd3-4547-a6bd-3dcb7c5f9e4e">
+    <name>Русский</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:LanguageExtension">
+      <languageCode>Checked</languageCode>
+    </extension>
+    <languageCode>ru</languageCode>
+  </languages>
+  <subsystems>Subsystem.ОбменМП_ОбменСМобильнымПриложением</subsystems>
+  <commonPictures>CommonPicture.ОбменМП_МобильноеПриложениеКартинкаПодсистемы</commonPictures>
+  <roles>Role.ОбменМП_ДоступКНастройкамОбменаМП</roles>
+  <commonModules>CommonModule.ОбменМП_ОбменСерверРасчетКП_БП3</commonModules>
+  <commonModules>CommonModule.ОбменМП_ОбменСМобильнымПриложениемВызовСервера</commonModules>
+  <commonModules>CommonModule.ОбменМП_СлужебныйВызовСервера</commonModules>
+  <exchangePlans>ExchangePlan.ОбменМП_ОбменСМобильнымПриложением</exchangePlans>
+  <xDTOPackages>XDTOPackage.ОбменМП_ПакетОбменаСМобильнымПриложением</xDTOPackages>
+  <catalogs>Catalog.ОбменМП_ВидыНастроекОбмена</catalogs>
+  <catalogs>Catalog.ркДома</catalogs>
+  <catalogs>Catalog.ФизическиеЛица</catalogs>
+  <documents>Document.ОбменМП_МесяцыНачислений</documents>
+  <enums>Enum.ОбменМП_ВидыНастроекРасширения</enums>
+  <informationRegisters>InformationRegister.ОбменМП_ИдентификаторыПлатежей</informationRegisters>
+  <informationRegisters>InformationRegister.ОбменМП_НастройкиРасширения</informationRegisters>
+  <accumulationRegisters>AccumulationRegister.ркЗадолженностьЛицевыхСчетов</accumulationRegisters>
+  <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ОбменМП_НастройкиОбмена</chartsOfCharacteristicTypes>
+</mdclass:Configuration>

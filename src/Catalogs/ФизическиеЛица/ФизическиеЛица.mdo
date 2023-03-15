@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="e0376a53-7d13-40d0-930d-7440cd5435c9" extendedConfigurationObject="9e9264c4-8a41-4db8-8562-c562e38975b8">
+  <producedTypes>
+    <objectType typeId="58ef70b7-730e-4542-8830-469828a09427" valueTypeId="6648cb72-f0ab-437e-a809-5e1917aa38dc"/>
+    <refType typeId="0499f083-db4a-49d6-88cc-7d7d41b8e563" valueTypeId="51134732-1ad6-400c-86b1-ba69f5e33a13"/>
+    <selectionType typeId="33efaecf-0336-4ba9-b36e-5364ecad2a6c" valueTypeId="ce86efcd-842e-451b-986e-fcae67de2071"/>
+    <listType typeId="8c0102a9-1611-483f-af86-c9585d160dfa" valueTypeId="b8aa7abd-4219-4d2d-b698-b4a94d4144e1"/>
+    <managerType typeId="6ecabf44-c5be-43d5-9233-e05a380f347a" valueTypeId="178203d4-a5cb-40e9-9f01-8b53cb514988"/>
+  </producedTypes>
+  <name>ФизическиеЛица</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <attributes uuid="2028dc10-7175-4c87-936d-60371ad15f7e">
+    <name>ОбменМП_idMobApp</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обмен м п id mob app</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>16</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>
