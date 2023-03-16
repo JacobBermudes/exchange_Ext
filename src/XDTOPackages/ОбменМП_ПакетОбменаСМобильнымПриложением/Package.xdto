@@ -59,7 +59,7 @@
 	<objectType name="Apartment">
 		<property name="ID" type="xs:string" form="Attribute"/>
 		<property name="Name" type="xs:string" form="Attribute"/>
-		<property name="Number" type="xs:int" form="Attribute"/>
+		<property name="Number" type="xs:string" form="Attribute"/>
 		<property name="BuildingID" type="xs:string" form="Attribute"/>
 		<property name="Porch" type="xs:string" form="Attribute"/>
 		<property name="Area" type="xs:decimal" nillable="true" form="Attribute"/>
