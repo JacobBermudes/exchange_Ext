@@ -84,6 +84,17 @@
         </stringQualifiers>
       </type>
     </items>
+    <items id="33c87609-24d8-4d8b-b178-1756e1a27e59">
+      <name>ДатаПоследнегоФайлаОплат</name>
+      <description>Крайняя дата файла оплаты</description>
+      <code>000000005</code>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+    </items>
   </predefined>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>

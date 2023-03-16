@@ -52,6 +52,7 @@
   <documents>Document.ОбменМП_МесяцыНачислений</documents>
   <enums>Enum.ОбменМП_ВидыНастроекРасширения</enums>
   <informationRegisters>InformationRegister.ОбменМП_ИдентификаторыПлатежей</informationRegisters>
+  <informationRegisters>InformationRegister.ОбменМП_ИменаЗагруженныхФайловОплат</informationRegisters>
   <informationRegisters>InformationRegister.ОбменМП_НастройкиРасширения</informationRegisters>
   <accumulationRegisters>AccumulationRegister.ркЗадолженностьЛицевыхСчетов</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ОбменМП_НастройкиОбмена</chartsOfCharacteristicTypes>

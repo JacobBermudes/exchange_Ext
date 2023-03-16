@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="47aa41e4-68b2-4017-9d1a-ad6b55b39940">
+  <producedTypes>
+    <selectionType typeId="9266cd26-0cfc-4830-858d-82f30b9f3aff" valueTypeId="1c49e4a5-5791-43e4-8d61-ae98a6513fd7"/>
+    <listType typeId="ef5fe700-0ae9-4b6d-9a27-3c7a0271a51f" valueTypeId="c12bc561-dbe9-4b63-ac76-da651f043eb5"/>
+    <managerType typeId="85aaff2f-3f96-4a9a-a2f6-9716fea57f84" valueTypeId="995ad162-c04a-45d2-9447-0395627362a6"/>
+    <recordSetType typeId="eea76ce8-fede-49af-a88e-52c8073c0f6f" valueTypeId="32983d56-0bb3-4ff1-8f2c-3357be79f948"/>
+    <recordKeyType typeId="4d0fc580-1ca2-4777-9e19-1a51e477cd1e" valueTypeId="682574aa-0ff6-4793-b6b7-6a21496eaee2"/>
+    <recordType typeId="e8a2bcce-823f-402f-8789-5624c03af3f7" valueTypeId="c5dda54f-21a9-4a6c-8c44-b59b0432bb14"/>
+    <recordManagerType typeId="58ff0b96-784f-44d3-90d2-82c6f87adf03" valueTypeId="5040313b-7319-4434-b01b-f0f2ffeb8c56"/>
+  </producedTypes>
+  <name>ОбменМП_ИменаЗагруженныхФайловОплат</name>
+  <synonym>
+    <key>ru</key>
+    <value>(МП) Имена загруженных файлов оплат</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="b27ac5fc-665e-4c64-a3e5-03388375d692">
+    <name>ИмяФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
