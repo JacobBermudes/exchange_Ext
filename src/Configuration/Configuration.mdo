@@ -39,11 +39,13 @@
     <languageCode>ru</languageCode>
   </languages>
   <subsystems>Subsystem.ОбменМП_ОбменСМобильнымПриложением</subsystems>
+  <styleItems>StyleItem.СобытиеОтказ</styleItems>
   <commonPictures>CommonPicture.ОбменМП_МобильноеПриложениеКартинкаПодсистемы</commonPictures>
   <roles>Role.ОбменМП_ДоступКНастройкамОбменаМП</roles>
   <commonModules>CommonModule.ОбменМП_ОбменСерверРасчетКП_БП3</commonModules>
   <commonModules>CommonModule.ОбменМП_ОбменСМобильнымПриложениемВызовСервера</commonModules>
   <commonModules>CommonModule.ОбменМП_СлужебныйВызовСервера</commonModules>
+  <commonModules>CommonModule.ркОбщегоНазначенияКлиент</commonModules>
   <exchangePlans>ExchangePlan.ОбменМП_ОбменСМобильнымПриложением</exchangePlans>
   <xDTOPackages>XDTOPackage.ОбменМП_ПакетОбменаСМобильнымПриложением</xDTOPackages>
   <catalogs>Catalog.ОбменМП_ВидыНастроекОбмена</catalogs>
