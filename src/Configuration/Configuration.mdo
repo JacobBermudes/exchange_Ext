@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="3cabac6e-fe47-4002-82c0-62d16d9df9b7">
   <name>ОбменСМобильнымПриложением</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен с мобильным приложением</value>
+  </synonym>
   <objectBelonging>Adopted</objectBelonging>
   <extension xsi:type="mdclassExtension:ConfigurationExtension">
     <defaultRunMode>Checked</defaultRunMode>
@@ -12,6 +16,7 @@
     <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
     <compatibilityMode>Checked</compatibilityMode>
     <defaultStyle>Extended</defaultStyle>
+    <defaultRoles>Extended</defaultRoles>
   </extension>
   <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="20e538af-c9cd-46bf-b33f-110232a8608d"/>
   <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="dc4814b9-9f45-4956-9698-21670185f5ad"/>
@@ -27,6 +32,7 @@
   <defaultRunMode>ManagedApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
+  <version>31.03.2023</version>
   <defaultLanguage>Language.Русский</defaultLanguage>
   <interfaceCompatibilityMode>TaxiEnableVersion8_2</interfaceCompatibilityMode>
   <compatibilityMode>8.3.14</compatibilityMode>
@@ -49,13 +55,11 @@
   <exchangePlans>ExchangePlan.ОбменМП_ОбменСМобильнымПриложением</exchangePlans>
   <xDTOPackages>XDTOPackage.ОбменМП_ПакетОбменаСМобильнымПриложением</xDTOPackages>
   <catalogs>Catalog.ОбменМП_ВидыНастроекОбмена</catalogs>
-  <catalogs>Catalog.ркДома</catalogs>
   <catalogs>Catalog.ФизическиеЛица</catalogs>
   <documents>Document.ОбменМП_МесяцыНачислений</documents>
   <enums>Enum.ОбменМП_ВидыНастроекРасширения</enums>
   <informationRegisters>InformationRegister.ОбменМП_ИдентификаторыПлатежей</informationRegisters>
   <informationRegisters>InformationRegister.ОбменМП_ИменаЗагруженныхФайловОплат</informationRegisters>
   <informationRegisters>InformationRegister.ОбменМП_НастройкиРасширения</informationRegisters>
-  <accumulationRegisters>AccumulationRegister.ркЗадолженностьЛицевыхСчетов</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ОбменМП_НастройкиОбмена</chartsOfCharacteristicTypes>
 </mdclass:Configuration>
